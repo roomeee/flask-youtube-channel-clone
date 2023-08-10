@@ -1,0 +1,34 @@
+
+
+
+{% macro card(first_video) -%}
+<div class="card">
+<div class='thumbnailContainer'>
+    <img src="{{ first_video['thumbnails']| highest_quality_image}}" class='thumbnail'>
+
+
+</div>
+
+
+    <div class="infoContainer">
+
+
+        <div class="channelLogoContainer">
+            <img src="https://yt3.googleusercontent.com/o5_mjwl7QSyLQBguYioDM3wB4POD7tFbCOmBJn5SdpwZ5QvmrzoDG_lM_hgRma6qVKPHwqUJ2q8=s176-c-k-c0x00ffffff-no-rj"
+             alt="channel"
+                 class="channelLogo">
+        </div>
+
+        <div class="info">
+            <p>{{first_video['title']}}</p>
+            <span> taylor swift</span></br>
+            <span>{{first_video['stats']['views'] | numberize}} views {{first_video['publishedTimeText']}} </span>
+        </div>
+    </div>
+</div>
+
+{%- endmacro %}
+
+
+
+
