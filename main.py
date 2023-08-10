@@ -26,7 +26,7 @@ def index():
     querystring = {"id": channel['lana'], "hl": "en", "gl": "US"}
 
     headers = {
-        "X-RapidAPI-Key": "6df3629cc0msh6c3b9859d31a3ebp1a49c3jsnf4bbc504eda7",
+        "X-RapidAPI-Key": APIKEY,
         "X-RapidAPI-Host": "youtube138.p.rapidapi.com"
     }
 
